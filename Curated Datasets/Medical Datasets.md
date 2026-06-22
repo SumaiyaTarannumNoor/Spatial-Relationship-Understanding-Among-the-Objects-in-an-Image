@@ -20,3 +20,5 @@
 - https://universe.roboflow.com/mic/brats2020
 - https://www.kaggle.com/datasets/awsaf49/brats2020-training-data
 - https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation
+## MSD (Medical Segmentation Decathlon cardiac dataset)
+- http://medicaldecathlon.com/
