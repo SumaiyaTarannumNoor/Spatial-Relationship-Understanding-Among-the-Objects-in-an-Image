@@ -16,3 +16,7 @@
 - https://wiki.cancerimagingarchive.net/pages/viewpage.action?pageId=37224922
 ## LiTS2017
 - https://academictorrents.com/details/27772adef6f563a1ecc0ae19a528b956e6c803ce
+## BRATS2020
+- https://universe.roboflow.com/mic/brats2020
+- https://www.kaggle.com/datasets/awsaf49/brats2020-training-data
+- https://www.kaggle.com/datasets/awsaf49/brats20-dataset-training-validation
