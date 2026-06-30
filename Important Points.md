@@ -14,3 +14,7 @@ Video World Model, this predicts the future observation about the object that ca
 Semantic World Model, is a combination of both VLM and VWM. It takes both object observations and then predicts the future action sequence about them. For example - Will the Blue ball touch the red ball?
 
 Traditional world model predicts future frames. But, Semantic World Model answers questions about the future given current observations (represented as an image) and a sequence of actions.
+
+## Task-agnostic
+Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
+It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
