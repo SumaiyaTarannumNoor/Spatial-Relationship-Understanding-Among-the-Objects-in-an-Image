@@ -9,3 +9,6 @@ Vision Language Model, this answers the questions about the object that can be s
 
 ## VWM 
 Video World Model, this predicts the future observation about the object that can be seen. For example - Will the ball move? It's about action sequence prediction.
+
+## SWM
+Semantic World Model, is a combination of both VLM and VWM. It takes both object observations and then predicts the future action sequence about them. For example - Will the Blue ball touch the red ball?
