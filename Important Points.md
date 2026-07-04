@@ -39,6 +39,20 @@ h = horizon <br>
 a<sub>i:j</sub> = Sequence of actions taken from state S<sub>i</sub> <br>
 Q<sub>S<sub>j</sub></sub>, A<sub>S<sub>j</sub></sub> = question answer tuple about future state S<sub>j</sub> which is reached by taking actions a<sub>i:j</sub> from state S<sub>i</sub>
 
+* **Horizon ($h$):** The total number of time steps (clock ticks) to get from the starting state $S_i$ to the future state $S_j$.
+* **Action Sequence ($a_{i:j}$):** The ordered list of actions the agent takes during those $h$ steps to bridge the gap.
+
+### The Math Check
+The formula states: 
+$$j = i + h$$
+
+If you start at step $i = 10$ and your horizon is $h = 3$, you will land at step $j = 13$.
+
+Your action sequence $a_{i:j}$ will contain exactly 3 actions:
+1. Action taken at step 10
+2. Action taken at step 11
+3. Action taken at step 12
+
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
