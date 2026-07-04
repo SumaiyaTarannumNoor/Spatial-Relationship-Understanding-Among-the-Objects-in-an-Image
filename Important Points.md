@@ -33,7 +33,11 @@ To train a world model to answer questions about the future, a state-action-ques
 
 D<sub>SAQA</sub> = {(S<sub>i</sub>,a<sub>i:j</sub>,Q<sub>S<sub>j</sub></sub>, A<sub>S<sub>j</sub></sub>)....} where j = i + h
 
-
+Here, <br>
+S<sub>i</sub> = Current state (RGB frame in our case) <br>
+h = horizon <br>
+a<sub>i:j</sub> = Sequence of actions taken from state S<sub>i</sub> <br>
+Q<sub>S<sub>j</sub></sub>, A<sub>S<sub>j</sub></sub> = question answer tuple about future state S<sub>j</sub> which is reached by taking actions a<sub>i:j</sub> from state S<sub>i</sub>
 
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
