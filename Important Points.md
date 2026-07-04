@@ -31,7 +31,7 @@ Unlike these explicit world models,SWM understands the dynamics of the world by 
 
 To train a world model to answer questions about the future, a state-action-question-answer (SAQA) dataset is generated 
 
-D<sub>SAQA</sub> = {(S<sub>i</sub>,a<sub>i:j</sub>,Q<sub>S</sub><sub>j</sub>, A<sub>S</sub><sub>j</sub>)....} where j = i + h
+D<sub>SAQA</sub> = {(S<sub>i</sub>,a<sub>i:j</sub>,Q<sub>S<sub>j</sub></sub>, A<sub>S<sub>j</sub></sub>)....} where j = i + h
 
 
 
