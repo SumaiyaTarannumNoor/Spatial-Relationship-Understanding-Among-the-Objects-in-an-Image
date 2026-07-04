@@ -44,3 +44,13 @@ In these instances, the horizon is set to **h = 3**, meaning the target state $j
 * **Target State ($S_j$):** *Reached at step 88*
 * **Question ($Q_{S_j}$):** "Did the player collide with a ghost during or at the end of this sequence?"
 * **Answer ($A_{S_j}$):** "No."
+
+## JSON
+```
+{
+  "S_i": "frame_000.png",
+  "a_i_j": ["MOVE_FORWARD", "TURN_LEFT", "MOVE_FORWARD"], 
+  "Q_S_j": "Is the path clear?",
+  "A_S_j": "Yes"
+}
+```
