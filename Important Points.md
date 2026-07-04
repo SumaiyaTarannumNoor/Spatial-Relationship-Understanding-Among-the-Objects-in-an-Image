@@ -65,11 +65,25 @@ The PaliGemma architecture is built on top of two individually trained component
 2. The SigLIP(Sigmoid Loss for Language-Image Pre-training) image encoder V<sub>SC</sub>
 
 W is used to project from Z<sub>SC</sub> to Z<sub>LLM</sub> <br>
-Where,
-Z<sub>SC</sub> = feature space of υ<sub>Φ</sub> <br>
+Where, <br>
+Z<sub>SC</sub> = feature space of υ<sub>Φ</sub><br>
 Z<sub>LLM</sub> = input token embedding space of LLM. <br>
 
 This paper uses 3B parameter checkpoint from PaliGemma as the base model.
+
+To adapt the base model (PaliGemma 3B Parameter Checkpoint) to answer questions about a specific future as a result of the actions, the model needs to be conditioned on the actions.
+
+Thus a new projection matrix P ∈ R<sup>d<sub>tok</sub> x d<sub>img</sub></sup> is used which projects a single action a ∈ R<sup>d<sub>act</sub></sup> into the latent space Z<sub>LLM</sub> similar to W projection matrix.
+
+Given a tuple (S<sub>i</sub>,a<sub>i:j</sub>,Q<sub>S<sub>j</sub></sub>, A<sub>S<sub>j</sub></sub>) from dataset D<sub>SAQA</sub>, the input sequence is constructed by concatenating the image embeddings, action embeddings, and question token embeddings as **concat(W<sup>T</sup> V<sub>SC</sub>(S<sub>i</sub>), P<sup>T</sup>a<sub>i+1</sub>,......P<sup>T</sup>a<sub>j</sub>, Q<sub>S<sub>j</sub></sub>**. 
+
+The model is then fine-tuned in an end-to-end manner to predict the target answer A<sub>S<sub>j</sub></sub>, by optimizing the standard cross-entropy loss. 
+
+```
+L = -log p (A<sub>S<sub>j</sub></sub> | S<sub>i</sub>, a<sub>i:j</sub>, Q<sub>S<sub>j</sub></sub>)
+```
+
+This Training procedur enables the model to capture the dynamics of the environment in language space to answer questions about future states without explicitly generating pixel-level representations. 
 
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
