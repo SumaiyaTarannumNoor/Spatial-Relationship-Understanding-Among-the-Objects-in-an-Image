@@ -56,10 +56,20 @@ Your action sequence $a_{i:j}$ will contain exactly 3 actions:
 ### Architecture 
 This SWM model is based on open-source VLM, PaliGemma.<br>
 The model contains three core pre-trained components:
-1. A transformer-based autoregressive language model with token embedding size d<sub>tok</sub> <br>
+1. A transformer-based autoregressive language model with token embedding size d<sub>tok</sub>
 2. A vision encoder υ<sub>Φ</sub> with a feature size d<sub>img</sub> and,
 3. A projection matrix W ∈ R <sup>d<sub>tok</sub> x d<sub>img</sub></sup>
 
+The PaliGemma architecture is built on top of two individually trained components: 
+1. The Gemma LLM
+2. The SigLIP(Sigmoid Loss for Language-Image Pre-training) image encoder V<sub>SC</sub>
+
+W is used to project from Z<sub>SC</sub> to Z<sub>LLM</sub> <br>
+Where,
+Z<sub>SC</sub> = feature space of υ<sub>Φ</sub> <br>
+Z<sub>LLM</sub> = input token embedding space of LLM. <br>
+
+This paper uses 3B parameter checkpoint from PaliGemma as the base model.
 
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
