@@ -29,6 +29,12 @@ world models for control are approximate models of the dynamics of the world, ty
 
 Unlike these explicit world models,SWM understands the dynamics of the world by reasoning in language space, allowing the model bootstrap from the Internet-scale pretraining of VLMs. SWM can then be used with planning techniques to derive versatile language-conditioned policies.
 
+To train a world model to answer questions about the future, a state-action-question-answer (SAQA) dataset is generated 
+
+D<sub>SAQA</sub> = {(S<sub>i</sub>,a<sub>i:j</sub>,Q<sub>S</sub><sub>j</sub>, A<sub>S</sub><sub>j</sub>)....} where j = i + h
+
+
+
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
