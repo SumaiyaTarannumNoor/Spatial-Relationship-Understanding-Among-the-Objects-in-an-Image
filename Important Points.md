@@ -112,6 +112,9 @@ SWM is evaluated in two simulation environments, LangTable and OGBench, capturin
 SWM is evaluated on reaching, separating blocks, and pushing in the LangTable environment, using both sampling-based planning and gradient-based improvement over a base policy. 
 SWM is trained on a mixture of expert data collected with a scripted policy and a suboptimal data collection with a random policy. To evaluate in out-of-distribution conditions, the block colour combinations are changed during evaluation to test compositional generalization. For example, our training data only includes the red pentagon, and evaluation is performed with a green pentagon and a novel purple pentagon.
 
+**OGBench**
+In OGBench SWM is we valuated ob cube reaching and custom cube stacking task. It is trained on a mixture of optimal and suboptimal data, collected using provided noisy expert data and play data from OGBench, respectively. Background colour is changed during evaluation to measure generalization 
+
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
