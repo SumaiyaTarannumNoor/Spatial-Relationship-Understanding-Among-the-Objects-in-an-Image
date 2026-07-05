@@ -101,7 +101,8 @@ Sampling-based planning provides a straightforward approach to planning with the
 **Gradient-Based Planning**
 For more complicated tasks, sampling-based planning methods typically require a large number of samples and optimization iterations, which become increasingly hard to scale for a large model like SWM. To reduce the number of samples and model forward passes, we propose a gradient-based optimization procedure together with a base proposal policy. The gradient provide directed information for optimizing the model, thus converging fadter than sampling-based techniques. The base proposal policy can effectively trim down the planning search space.
 
-
+**Multiple Tasks**
+To solve long-horizon tasks, the aformentioned planning procedure can be extended to amulti-step formulation. The capabilities of SWM can be used to track task progressand trasition between subgoals without requiring any additional components.
 
 ## Experiments and Results 
 SWM is evaluated in two simulation environments, LangTable and OGBench, capturing combinational generalization and dexterous manipulation.
