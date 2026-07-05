@@ -95,8 +95,13 @@ This Training procedur enables the model to capture the dynamics of the environm
 | **Q2:** "Is the red block held in the air?" | "Yes" | **W₂ = 3** | **Medium weight:** This proves the robot actually lifted it. |
 | **Q3:** "Did the robot crash into the table?" | "No" | **W₃ = 10** | **Critical weight:** Avoiding damage is the absolute highest priority. |
 
-**Sampling-based Planning**
+**Sampling-Based Planning**
 Sampling-based planning provides a straightforward approach to planning with the model. An example is Model Predictive Path Integral (MPPI) control-algorithm, which maintains a Gaussian distribution of action parameters and iteratively refines it by querying the model.
+
+**Gradient-Based Planning**
+For more complicated tasks, sampling-based planning methods typically require a large number of samples and optimization iterations, which become increasingly hard to scale for a large model like SWM. To reduce the number of samples and model forward passes, we propose a gradient-based optimization procedure together with a base proposal policy. The gradient provide directed information for optimizing the model, thus converging fadter than sampling-based techniques. The base proposal policy can effectively trim down the planning search space.
+
+
 
 ## Experiments and Results 
 SWM is evaluated in two simulation environments, LangTable and OGBench, capturing combinational generalization and dexterous manipulation.
