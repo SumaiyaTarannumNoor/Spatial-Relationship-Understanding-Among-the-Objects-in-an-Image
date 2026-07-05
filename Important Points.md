@@ -85,6 +85,8 @@ L = -log p (A<sub>S<sub>j</sub></sub> | S<sub>i</sub>, a<sub>i:j</sub>, Q<sub>S<
 
 This Training procedur enables the model to capture the dynamics of the environment in language space to answer questions about future states without explicitly generating pixel-level representations. 
 
+## Planning with SWM
+
 ### SWM Prediction
 
 | Question ($Q_i$) | Desired Answer ($A_i^*$) | Human-Assigned Heuristic Weight ($W_i$) | Why the human chose this weight |
@@ -93,8 +95,14 @@ This Training procedur enables the model to capture the dynamics of the environm
 | **Q2:** "Is the red block held in the air?" | "Yes" | **W₂ = 3** | **Medium weight:** This proves the robot actually lifted it. |
 | **Q3:** "Did the robot crash into the table?" | "No" | **W₃ = 10** | **Critical weight:** Avoiding damage is the absolute highest priority. |
 
+**Sampling-based Planning**
+Sampling-based planning provides a straightforward approach to planning with the model. An example is Model Predictive Path Integral (MPPI) control-algorithm, which maintains a Gaussian distribution of action parameters and iteratively refines it by querying the model.
+
 ## Experiments and Results 
 SWM is evaluated in two simulation environments, LangTable and OGBench, capturing combinational generalization and dexterous manipulation.
+
+**Lang Table**
+SWM is evaluated on reaching, separating blocks, and pushing in the LangTable environment, using both sampling-based planning and gradient-based improvement over a base policy. 
 
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
