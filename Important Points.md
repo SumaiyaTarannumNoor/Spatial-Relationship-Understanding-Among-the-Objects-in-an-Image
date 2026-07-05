@@ -103,6 +103,7 @@ For more complicated tasks, sampling-based planning methods typically require a 
 
 **Multiple Tasks**
 To solve long-horizon tasks, the aformentioned planning procedure can be extended to amulti-step formulation. The capabilities of SWM can be used to track task progressand trasition between subgoals without requiring any additional components.
+Each subgoal is executed sequentially and its completion is verified using SWM. This verification is feasible at no additional cost because zero-horizon examples are included in the training dataset. For example, in the block picking task, the following sub-goals are used:["Is the block grasped?", ""Is the block stacked on top of the other block?"], withthe desired answers ["yes", "yes"] in order to accomplish a two-stage task. This method is used to extend planning to multi-step LangTable tasks.
 
 ## Experiments and Results 
 SWM is evaluated in two simulation environments, LangTable and OGBench, capturing combinational generalization and dexterous manipulation.
