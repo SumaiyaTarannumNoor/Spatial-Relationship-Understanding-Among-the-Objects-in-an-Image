@@ -113,7 +113,10 @@ SWM is evaluated on reaching, separating blocks, and pushing in the LangTable en
 SWM is trained on a mixture of expert data collected with a scripted policy and a suboptimal data collection with a random policy. To evaluate in out-of-distribution conditions, the block colour combinations are changed during evaluation to test compositional generalization. For example, our training data only includes the red pentagon, and evaluation is performed with a green pentagon and a novel purple pentagon.
 
 **OGBench**
-In OGBench SWM is we valuated ob cube reaching and custom cube stacking task. It is trained on a mixture of optimal and suboptimal data, collected using provided noisy expert data and play data from OGBench, respectively. Background colour is changed during evaluation to measure generalization 
+In OGBench SWM is we valuated ob cube reaching and custom cube stacking task. It is trained on a mixture of optimal and suboptimal data, collected using provided noisy expert data and play data from OGBench, respectively. Background colour is changed during evaluation to measure generalization.
+
+
+For both environments, a per-task Diffusion policy is trained on 300 expert trajectories for 100 epochs as the base policy. The expert trajectories were collected using the same experts as in the offline dataset.
 
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
