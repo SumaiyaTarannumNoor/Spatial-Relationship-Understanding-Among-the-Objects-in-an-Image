@@ -120,6 +120,8 @@ For both environments, a per-task Diffusion policy is trained on 300 expert traj
 
 During training, the dataset was balanced in both the number of each possible question type and the answer distribution for each respective question. For example, for each state in the LangTable environment, there are 8C2 possible questions about whether two blocks are touching, but 8 questions about whether the end effector is touching a given block. Similarly, most blocks are separated in the initial states of the LangTable environment, leading to far more 'yes' answers than 'no' answers. The imbalance is addressed during training by over sampling tuples such that there is a balanced amount of question types and answer distributions. 
 
+**Policy Improvement** across LangTable and OGBench across multiple tasks. The average success rates of the base policies (14.4% on LangTable and 45.33% on OGBench) increase to 81.6% and 76.0% respectively. SWM further outperforms IDQL (Implicit Diffusion Q-Learning) and AVD (Action Vonditioned Video Diffusion) baselines across all evaluated tasks and environments. Reported success rates over n=50 seeds with 95% confidence intervals (normal aporoximation).
+
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
