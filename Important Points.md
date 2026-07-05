@@ -85,6 +85,15 @@ L = -log p (A<sub>S<sub>j</sub></sub> | S<sub>i</sub>, a<sub>i:j</sub>, Q<sub>S<
 
 This Training procedur enables the model to capture the dynamics of the environment in language space to answer questions about future states without explicitly generating pixel-level representations. 
 
+### SWM Prediction
+
+| Question ($Q_i$) | Desired Answer ($A_i^*$) | Human-Assigned Heuristic Weight ($W_i$) | Why the human chose this weight |
+| :--- | :--- | :--- | :--- |
+| **Q1:** "Is the gripper touching the block?" | "Yes" | **W₁ = 1** | **Low weight:** Touching it is just the first step. |
+| **Q2:** "Is the red block held in the air?" | "Yes" | **W₂ = 3** | **Medium weight:** This proves the robot actually lifted it. |
+| **Q3:** "Did the robot crash into the table?" | "No" | **W₃ = 10** | **Critical weight:** Avoiding damage is the absolute highest priority. |
+
+
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
