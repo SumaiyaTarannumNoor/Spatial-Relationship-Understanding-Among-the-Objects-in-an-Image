@@ -93,6 +93,8 @@ This Training procedur enables the model to capture the dynamics of the environm
 | **Q2:** "Is the red block held in the air?" | "Yes" | **W₂ = 3** | **Medium weight:** This proves the robot actually lifted it. |
 | **Q3:** "Did the robot crash into the table?" | "No" | **W₃ = 10** | **Critical weight:** Avoiding damage is the absolute highest priority. |
 
+## Experiments and Results 
+SWM is evaluated in two simulation environments, LangTable and OGBench, capturing combinational generalization and dexterous manipulation.
 
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
