@@ -110,6 +110,7 @@ SWM is evaluated in two simulation environments, LangTable and OGBench, capturin
 
 **Lang Table**
 SWM is evaluated on reaching, separating blocks, and pushing in the LangTable environment, using both sampling-based planning and gradient-based improvement over a base policy. 
+SWM is trained on a mixture of expert data collected with a scripted policy and a suboptimal data collection with a random policy. To evaluate in out-of-distribution conditions, the block colour combinations are changed during evaluation to test compositional generalization. For example, our training data only includes the red pentagon, and evaluation is performed with a green pentagon and a novel purple pentagon.
 
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
