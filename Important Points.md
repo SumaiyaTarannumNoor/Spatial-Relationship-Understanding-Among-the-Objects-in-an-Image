@@ -128,3 +128,7 @@ In a semantic world model, control frequency is the speed at which an AI makes d
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
+
+
+# JEPA (Joint embedding predictive architecture)
+In a JEPA prediction occurs in the abstract representation space.
