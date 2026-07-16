@@ -1,4 +1,4 @@
-## VQA - Visual Question-Answering
+ki## VQA - Visual Question-Answering
 ## VLM - Vision Language Model
 ## VLA - Vision Language Action
 
@@ -134,3 +134,5 @@ It describes a model that can solve many different types of problems without cha
 In a JEPA prediction occurs in the abstract representation space.
 
 JEPA can efficiently extract meaningful high-level representation by focusing on essential temporal and semantic patterns rather than low-level pixel details.
+
+A key challenge in training JEPA models is preventing collapse in the hidden representations. Without taking any precautions, JEPAs are prone to a collapse mode during which the model becomes in invarient to the inputand maps everything to the same internal representation. 
