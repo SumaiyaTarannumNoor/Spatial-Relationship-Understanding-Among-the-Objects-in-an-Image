@@ -122,6 +122,9 @@ During training, the dataset was balanced in both the number of each possible qu
 
 **Policy Improvement** across LangTable and OGBench across multiple tasks. The average success rates of the base policies (14.4% on LangTable and 45.33% on OGBench) increase to 81.6% and 76.0% respectively. SWM further outperforms IDQL (Implicit Diffusion Q-Learning) and AVD (Action Vonditioned Video Diffusion) baselines across all evaluated tasks and environments. Reported success rates over n=50 seeds with 95% confidence intervals (normal aporoximation).
 
+### Control Frequency 
+In a semantic world model, control frequency is the speed at which an AI makes decisions and sends movement commands to a robot or virtual agent (e.g., 10 times a second, or 10 Hz).
+
 ## Task-agnostic
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
