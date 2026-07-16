@@ -138,3 +138,4 @@ JEPA can efficiently extract meaningful high-level representation by focusing on
 A key challenge in training JEPA models is preventing collapse in the hidden representations. Without taking any precautions, JEPAs are prone to a collapse mode during which the model becomes in invarient to the inputand maps everything to the same internal representation. 
 
 ## VJ-VCR (Video JEPA with Variance Covariance Regularization)
+Variance-Covariance regularization encourages the hidden representations of the model to exibit high variance within each hidden components. They found that this regularization strategy in the context of video representation learning with JEPA successfully prevents collapse. Moreover, they show empirically that VJ-VCR learns video representation that extract high-level information about the underlying inputs. 
