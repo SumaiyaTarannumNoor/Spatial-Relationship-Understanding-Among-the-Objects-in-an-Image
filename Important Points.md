@@ -132,3 +132,5 @@ It describes a model that can solve many different types of problems without cha
 
 # JEPA (Joint embedding predictive architecture)
 In a JEPA prediction occurs in the abstract representation space.
+
+JEPA can efficiently extract meaningful high-level representation by focusing on essential temporal and semantic patterns rather than low-level pixel details.
