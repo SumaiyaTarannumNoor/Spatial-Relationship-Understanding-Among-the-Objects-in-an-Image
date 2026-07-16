@@ -136,3 +136,5 @@ In a JEPA prediction occurs in the abstract representation space.
 JEPA can efficiently extract meaningful high-level representation by focusing on essential temporal and semantic patterns rather than low-level pixel details.
 
 A key challenge in training JEPA models is preventing collapse in the hidden representations. Without taking any precautions, JEPAs are prone to a collapse mode during which the model becomes in invarient to the inputand maps everything to the same internal representation. 
+
+## VJ-VCR (Video JEPA with Variance Covariance Regularization)
