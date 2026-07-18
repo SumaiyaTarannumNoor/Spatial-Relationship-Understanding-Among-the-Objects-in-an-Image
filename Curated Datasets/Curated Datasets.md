@@ -17,3 +17,5 @@
 - https://github.com/open-mmlab/mmaction2/blob/main/tools/data/kinetics710/README.md
 ## Something-Something v. 2 Dataset
 - https://www.qualcomm.com/developer/software/something-something-v-2-dataset
+## AVA
+- https://research.google.com/ava/
