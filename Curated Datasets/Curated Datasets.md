@@ -11,3 +11,5 @@
 - https://www.cs.toronto.edu/~nitish/unsupervised_video/
 ## 	VideoMix2M
 - https://github.com/facebookresearch/jepa
+## HowTo100M
+- https://www.di.ens.fr/willow/research/howto100m/
