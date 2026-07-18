@@ -1,4 +1,4 @@
-ki## VQA - Visual Question-Answering
+## VQA - Visual Question-Answering
 ## VLM - Vision Language Model
 ## VLA - Vision Language Action
 
