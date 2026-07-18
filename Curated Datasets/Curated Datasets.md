@@ -7,3 +7,5 @@
 - https://hyper.ai/en/datasets/17087
 ## Visual Genome
 - https://homes.cs.washington.edu/~ranjay/visualgenome/index.html
+## Moving MNIST
+- https://www.cs.toronto.edu/~nitish/unsupervised_video/
