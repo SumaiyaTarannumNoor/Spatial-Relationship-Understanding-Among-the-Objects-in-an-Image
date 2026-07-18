@@ -19,3 +19,5 @@
 - https://www.qualcomm.com/developer/software/something-something-v-2-dataset
 ## AVA
 - https://research.google.com/ava/
+## kinetics-dataset
+- https://github.com/cvdfoundation/kinetics-dataset
