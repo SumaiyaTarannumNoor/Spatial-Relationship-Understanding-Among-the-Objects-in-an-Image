@@ -9,3 +9,5 @@
 - https://homes.cs.washington.edu/~ranjay/visualgenome/index.html
 ## Moving MNIST
 - https://www.cs.toronto.edu/~nitish/unsupervised_video/
+## 	VideoMix2M
+- https://github.com/facebookresearch/jepa
