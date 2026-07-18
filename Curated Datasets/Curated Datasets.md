@@ -13,3 +13,5 @@
 - https://github.com/facebookresearch/jepa
 ## HowTo100M
 - https://www.di.ens.fr/willow/research/howto100m/
+## Kinetics-400/600/700 (K710)
+- https://github.com/open-mmlab/mmaction2/blob/main/tools/data/kinetics710/README.md
