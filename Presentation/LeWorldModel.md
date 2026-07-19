@@ -6,7 +6,9 @@ In this paper, Lucas et al. introduce LeWorldmodel (LeWM), which, according to t
 ### Architecture
  Lewm is built with two components: an encoder and a predictor. The encoder maps a given frame observation o<sub>t</sub> into a compact low-dimensional latent representation z<sub>t</sub>. The predictor models the environment dynamics in latent space by predicting the embedding of the next frame observation z<sub>t+1</sub> given the latent embedding z<sub>t</sub> and an action a<sub>t</sub>. 
  
-Encoder: z<sub>t</sub> = enc<sub>θ</sub>(o<sub>t</sub>)
+Encoder: z<sub>t</sub> = enc<sub>θ</sub>(o<sub>t</sub>) <br>
 Predictor: z<sub>t+1</sub> = pred<sub>ϕ</sub> (z<sub>t</sub>, a<sub>t</sub>)
 
 The encoder is implemented as a vision transformer (ViT). In general, the authors used the tiny configuration (~5M parameters) with a patch size of 14, 12 layers and 3 attention heads, and hidden dimensions of 192. The observation embedding z<sub>t</sub> is constructed from the [CLS] token embedding of the last layer, followed by a projection step. The projection step maps the [CLS] token embedding into a new representation space using a 1-layer MLP with Batch Normalization. This step is necessary because the final ViT layer applies a Layer Normalization, which prevents their anti-collapse objective from being optimized effectively.
+
+The predictor is a transformer with 6 layers, 16 attention heads, and 10% dropout (~10M parameters). Actions are incorporated into the predictor through Adaptive Layer Normalization (AdaLN) applied at each layer. The AdaLN parameters are initialized to zero to stabilize training and ensure that action conditioning impacts the predictor training progressively. The Predictor takes as input a history of N frame representations and predicts the next frame representation auto-regressively with temporal casual masking to avoid looking at future embeddings. The predictor is also followed by a projector network with the same implementation as the one used for the encoder. All components of their world model are learned jointly using the loss described in the following paragraph.
