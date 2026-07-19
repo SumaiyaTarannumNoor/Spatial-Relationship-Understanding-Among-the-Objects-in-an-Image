@@ -4,7 +4,7 @@ In this paper, Lucas et al. introduce LeWorldmodel (LeWM), which, according to t
 - Their experiment demonstrated that LeWM achieved competitive control performance across diverse 2D and 3D tasks with only a compact 15M-parameter model, surpassing existing end-to-end JEPA-based approaches while remaining competitive with foundation-model-based world models at substantially lower cost, enabling planning up to 48x faster.
 
 ### Architecture
- Lewm is built with two components: an encoder and a predictor. The encoder maps a given frame observation o<sub>t</sub> into a compact low-dimensional latent representation z<sub>t</sub>. The predictor models the environment dynamics in latent space by predicting the embedding of the next frame observation z<sub>t+1</sub> given the latent embedding z<sub>t</sub> and an action a<sub>t</sub>. 
+Lewm consists of two components: an encoder and a predictor. The encoder maps a given frame observation o<sub>t</sub> into a compact low-dimensional latent representation z<sub>t</sub>. The predictor models the environment dynamics in latent space by predicting the embedding of the next frame observation z<sub>t+1</sub> given the latent embedding z<sub>t</sub> and an action a<sub>t</sub>. 
  
 Encoder: z<sub>t</sub> = enc<sub>θ</sub>(o<sub>t</sub>) <br>
 Predictor: z<sub>t+1</sub> = pred<sub>ϕ</sub> (z<sub>t</sub>, a<sub>t</sub>)
@@ -19,4 +19,4 @@ The authors considered a fully offline and reward-free setting. LeWorldModel is 
 Assran et al. evaluated LeWM 2 on four different datasets: TwoRoom, PushT, OGBench-Cube and Reacher.
 
 ### Results 
-LeWM achieved significantly better performance than PLDM while remaining competitive with DINO-WM, across three properties: agent location, block location, and block angle. For agest location LeWM achieved 0.052 +/- 0.149 MSE and 0.974 r
+LeWM achieved significantly better performance than PLDM while remaining competitive with DINO-WM, across three properties: agent location, block location, and block angle. For agent location, LeWM achieved 0.052 +/- 0.149 MSE for linear and 0.004 +/- 0.056 for MLP. For block location, LeWM achieved 0.029 +/- 0.073 MSE for linear and 0.001 +/- 0.006 for MLP. Lastly, for block angle, LeWM achieved 0.187 +/- 0.359 MSE for linear and 0.021 +/- 0.139 for MLP.
