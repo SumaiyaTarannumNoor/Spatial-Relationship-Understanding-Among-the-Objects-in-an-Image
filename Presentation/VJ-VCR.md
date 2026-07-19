@@ -1,11 +1,15 @@
 ## Video Representation Learning with Joint-Embedding Predictive Architecture
 
-In this paper, Katrina et el. present Video JEPA with Variance-Covariance Regularization (VJ-VCR): a joint embedding predictive architecture for self-supervised video representation learning that employs variance and covariance regularization to avoid representation collapse. They explore different ways to incorporate latent variables into the VJ-VCR framework that capture information about uncertainty in the future in non-deterministic settings.
+In this paper, Katrina et al. present Video JEPA with Variance-Covariance Regularization (VJ-VCR): a joint embedding predictive architecture for self-supervised video representation learning that employs variance and covariance regularization to avoid representation collapse. They explore different ways to incorporate latent variables into the VJ-VCR framework that capture information about uncertainty in the future in non-deterministic settings.
+
+
 Self-supervised learning for videos enables models to learn and extract high-level, information-rich features from videos without external annotations. In this way, models can capture complex temporal dynamics and semantic information directly from raw video data.
 Generative models are used for pretext tasks where they make predictions in the input pixel space. JEPA or Joint embedding predictive architecture is an alternative to these generative models.
+
+
 In particular, in JEPA the prediction occurs in the abstract space instead of pixel space, which is less computationally expensive.
 There is a key challenge in training JEPA: preventing collapse in the hidden representations.
-To prevent this collapse, Katrina et el. proposes a JEPA model that applies varience-covarience regularization to the model's hidden representations. They call this model Video JEPA with Variance-Covariance Regul;arization (VJ-VCR).
+To prevent this collapse, Katrina et al. proposes a JEPA model that applies varience-covarience regularization to the model's hidden representations. They call this model Video JEPA with Variance-Covariance Regul;arization (VJ-VCR).
 Presenting an alternate way for generative models in terms of predicting future and demonstrating VJ-VCR for capturing high-level information from videos are two main contributions of this paper. Two more contributions are: The outperformance of VJ-VCR from generative models on several downstream tasks and proposing ways to incorporate latent variables in the VJ-VCR setup that capture the information about future uncertainty.
 
 ### Architecture
@@ -15,7 +19,7 @@ The Predictor takes the hidden states of the input frames and predicts the hidde
 VJ-VCR incorporates a latent variable in order to facilitate the prediction task in case the target frames are not completely deterministic versions of the input.
 
 ### Experiments
-To evaluate their model VJ-VCR Katrina et el. have performed for types of experiments. 
+To evaluate their model VJ-VCR Katrina et al. have performed for types of experiments. 
 Those are: 
 1. Generative Model Baseline: They use general generative model baselines, such as the difference in generative model architecture versus VJ-VCR architecture and similarity in incorporating a latent variable.
 2. They validated their approach on two types of datasets:
