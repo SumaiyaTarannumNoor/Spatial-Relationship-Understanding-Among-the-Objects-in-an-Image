@@ -12,3 +12,8 @@ mechanism, which autoregressively predicts the representation of the next video 
 ### Architecture
 In the architecture of V-JEPA 2, the Encoder and the Predictor are each parameterized as a vision transformer (ViT). To encode relative position information in the vision transformer, they leveraged RoPE (Rotary Position Embedding) instead of the absolute sincos position. They use a 3D extension of traditional 1S-RoPE by partitioning the feature dimension into three approximately equal segments (for the temporal, height and width axes) and applying the 1D rotations separately to the segment for each axes. 
  
+Assran et al. have used some key scaling ingredients for scaling V-JEPA pre-training principle to obtain V-JEPA 2 model.
+1. Data scaling: They increased the dataset size from 2 million to 22 million videos by leveraging and curating additional data sources.
+2. Model Scaling: The scaled the encoder architecture from 300 million to over 1 billion parameters, going from ViT-L to ViT-g.
+3. Longer Training: Adopted a warmup-constant-decay learning rate schedule simplifies hyperparameter tuning and enabled them to extend training from 90 thousand to 252 thousand iterations, effectively leveraging the additional data.
+4. Higher Resolution: They leveraged the warmup-constant-decay schedule to efficiently scale to higher resolution video and longer video clips by training on shorter, lower-resolution clips during the warmup and constant phases, and then increasing resolution and/or clip-length during the final decay phase.
