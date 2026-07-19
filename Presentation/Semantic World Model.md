@@ -4,14 +4,14 @@ A generalized world model that is represented as an action-cobditional vision-la
 These types of models utilise Multimodal Data, which leads to the
 question, "What is multimodal data"? 
 Multimodal data is a combination of different types of data, such as text, images, audio, video, and sensor readings, that are combined and used in a single system to complete complex tasks, such as predicting the next action.
-In this paper titled, **Semantic World Models**, Jacob et el. introduce a generalized world model that is represented as an action-conditional vision-language model that answers questions about frames, more accurately future frames given the current observations and a sequence of actions.
+In this paper titled, **Semantic World Models**, Jacob et al. introduce a generalized world model that is represented as an action-conditional vision-language model that answers questions about frames, more accurately future frames given the current observations and a sequence of actions.
 SWM was evaluated on a set of multiple different tasks in twoi commonly used multi-task simulation domains - Language Table (LangTable) and OGBench.
 These evaluations show two observations:
 1. SWM can accurately answer questions about future outcomes while generalizing to novel scenes, and
 2. SWM can be combined with standard sampling-based planning techniques and a gradient-based improvement technique to solve diverse robotic tasks with considerable policy improvement through test-time optimization.
 
 ### Dataset
-To train this SWM, Jacob et el. generated a SAQA dataset, which is a state-action-question-answer dataset.
+To train this SWM, Jacob et al. generated a SAQA dataset, which is a state-action-question-answer dataset.
 D<sub>SAQA</sub> = {(S<sub>i</sub>,a<sub>i:j</sub>,Q<sub>S<sub>j</sub></sub>, A<sub>S<sub>j</sub></sub>)....} where j = i + h
 
 Here, <br>
@@ -38,65 +38,6 @@ In a semantic world model, planning is a live decision-making process using high
 
 ### Results
 SWM demonstrates an average performance increase over the base policies from 14.4% to 81.6% on average for lang table and 45.33% to 76% on average for OFBench. SWM also outperforms both AVD (Action Conditioned Video Diffusion) and IDQL (Implicit Diffusion Q-Learning) baselines across all tasks, demonstrating the effectiveness of SWM for planning.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
