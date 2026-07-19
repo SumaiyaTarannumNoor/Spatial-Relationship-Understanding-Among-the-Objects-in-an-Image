@@ -6,5 +6,9 @@ In this work, the authors build upon the self-supervised hypothesis as a means t
 
 For V-JEPA 2, Assran et al. utilize a stage-wise training procedure, beginning with action-free pre-training on internet-scale video, followed by post-training with a small amount of interaction data. In the first stage, they use a mask-denoising feature prediction objective, where the model segments of a video in a learned representation space. They train the V-JEPA 2 encoder with up to 1 billion parameters and with more than 1 million hours of video.
 
-After the pretraining on internet-scale video, they trained an action-conditioned world model, V-JEPA 2-AC, on a small set of interaction data using the representations learned from the first stage. This action-conditioned world model is a 300M-parameter transformer network employing a block-casual attention mechanism, which autoregressively predicts the representation of the next video frame conditioned on an action and previous states. 
+After the pretraining on internet-scale video, they trained an action-conditioned world model, V-JEPA 2-AC, on a small set of interaction data using the representations learned from the first stage. This action-conditioned world model is a 300M-parameter transformer network employing a block-casual attention 
+mechanism, which autoregressively predicts the representation of the next video frame conditioned on an action and previous states. 
+
+### Architecture
+In the architecture of V-JEPA 2, the Encoder and the Predictor are each parameterized as a vision transformer (ViT). To encode relative position information in the vision transformer, they leveraged RoPE (Rotary Position Embedding) instead of the absolute sincos position. They use a 3D extension of traditional 1S-RoPE by partitioning the feature dimension into three approximately equal segments (for the temporal, height and width axes) and applying the 1D rotations separately to the segment for each axes. 
  
