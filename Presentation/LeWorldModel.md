@@ -15,5 +15,8 @@ The predictor is a transformer with 6 layers, 16 attention heads, and 10% dropou
 
 
 ### Dataset 
-The authors considered a fully offline and reward-free setting. LeWorldModel is trained solely from unannoted trajectories of observations and actions, without access to reward signals or task specifications. Their objective was not to optimize behaviour for a specific task, but to learn representations that capture environment dynamics and can later be controlled or adapted to a diverse set of tasks.
-Assran et al. evaluated V-JEPA 2 on four different datasets: TwoRoom, PushT, OGBench-Cube and Reacher.
+The authors considered a fully offline and reward-free setting. LeWorldModel is trained solely from unannoted trajectories of observations and actions, without access to reward signals or task specifications. Their objective was not to optimize behaviour for a specific task, but to learn representations that capture environment dynamics and can later be controlled or adapted to a diverse set of tasks. Assran et al. evaluated LeWM on a diverse set of tasks, including navigation, motion planning and manipulation, in both two and three-dimensional environments.
+Assran et al. evaluated LeWM 2 on four different datasets: TwoRoom, PushT, OGBench-Cube and Reacher.
+
+### Results 
+LeWM achieved significantly better performance than PLDM while remaining competitive with DINO-WM, across three properties: agent location, block location, and block angle. For agest location LeWM achieved 0.052 +/- 0.149 MSE and 0.974 r
