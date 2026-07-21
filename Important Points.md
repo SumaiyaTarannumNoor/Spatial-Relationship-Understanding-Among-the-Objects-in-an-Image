@@ -139,3 +139,6 @@ A key challenge in training JEPA models is preventing collapse in the hidden rep
 
 ## VJ-VCR (Video JEPA with Variance Covariance Regularization)
 Variance-Covariance regularization encourages the hidden representations of the model to exibit high variance within each hidden components. They found that this regularization strategy in the context of video representation learning with JEPA successfully prevents collapse. Moreover, they show empirically that VJ-VCR learns video representation that extract high-level information about the underlying inputs. 
+
+### TSDF (Truncated Signed Distance Function)
+Truncated Signed Distance Function (TSDF) fusion is a 3D reconstruction technique that aggregates depth maps from sensors like Kinect or RealSense into a volumetric grid. It calculates the distance to the nearest surface for each voxel, truncates extreme values, and averages overlapping measurements to denoise data and construct watertight surfaces.
