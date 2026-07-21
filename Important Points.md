@@ -142,3 +142,5 @@ Variance-Covariance regularization encourages the hidden representations of the 
 
 ### TSDF (Truncated Signed Distance Function)
 Truncated Signed Distance Function (TSDF) fusion is a 3D reconstruction technique that aggregates depth maps from sensors like Kinect or RealSense into a volumetric grid. It calculates the distance to the nearest surface for each voxel, truncates extreme values, and averages overlapping measurements to denoise data and construct watertight surfaces.
+### SLAM
+SLAM stands for Simultaneous Localization and Mapping.
