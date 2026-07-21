@@ -18,4 +18,6 @@ The final VL-JEPA models are trained in two stages:
  2. A supervised finetuning (SFT) stage that equips the model with VQA capabilities, resulting in VL-JEPA<sub>SFT</sub>.  
 
 ### Evaluation
+VL-JEPA<sub>BASE</sub> achieved very good top-1 accuracy in 8 different datasets - 19.3 on SSv2, 21.8 on EK100, 33.2 on EgoExo4D, 64.8 on Kinetics-400, 47.4 on COIN (SR), 79.4 on COIN (TR), 64.5 on CrossTask (SR) and 89.6 on CrossTask (TR). VL-JEPA<sub>BASE</sub> also achieved very good Recall@1 on 8 different datasets - 40.0 on MSR-VTT, 64.9 on ActivityNet, 50.0 on DiDeMo, 49.0 on MSVD, 40.0 on YouCook2, 83.1 on PVD-Bench, 93.3 on Dream-1K and 88.8 on VDC-1K.
 
+VL-JEPA<sub>SFT</sub> also achieved top-1 accuracy in 8 different datasets - 73.2 on SSv2, 44.6 on EK100, 68.1 on EgoExo4D, 84.8 on Kinetics-400, 66.4 on COIN (SR), 90.3 on COIN (TR), 79.8 on CrossTask (SR) and 96.2 on CrossTask (TR). VL-JEPA<sub>SFT</sub> also achieved Recall@1 on 8 different datasets - 46.2 on MSR-VTT, 62.4 on ActivityNet, 52.3 on DiDeMo, 52.3 on MSVD, 37.8 on YouCook2, 82.6 on PVD-Bench, 89.3 on Dream-1K and 87.7 on VDC-1K.
