@@ -14,7 +14,8 @@ The VL-JEPA comprises four components:
 4. Y-Decoder: Y-Decoder is not involved during the main training phase of VL-JEPA. At inference time, it translates the predicted embedding as human-readable text when necessary.
 
 The final VL-JEPA models are trained in two stages: 
- 1. A pre-training stage using caption data to establish robust vision-language alignment, and
- 2. A supervised finetuning (SFT) stage that equips the model with VQA capabilities.  
+ 1. A pre-training stage using caption data to establish robust vision-language alignment, resulting in VL-JEPA<sub>BASE</sub>, and
+ 2. A supervised finetuning (SFT) stage that equips the model with VQA capabilities, resulting in VL-JEPA<sub>SFT</sub>.  
 
-### Dataset
+### Evaluation
+
