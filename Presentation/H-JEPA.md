@@ -1,4 +1,4 @@
-## A path Towards Autonomous Machine Intelligence Version 0.9.2
+## A Path Towards Autonomous Machine Intelligence Version 0.9.2
 -- https://www.youtube.com/watch?v=NLSm51ba--k&t=8
 
 The author states in the prologue section that this piece is neither a scholarly paper nor a technical paper, but a position paper to express their vision.
