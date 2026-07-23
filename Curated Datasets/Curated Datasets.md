@@ -25,3 +25,5 @@
 - https://droid-dataset.github.io/
 ## MiraData
 -https://github.com/mira-space/MiraData
+## iGibson
+- https://github.com/StanfordVL/iGibson
