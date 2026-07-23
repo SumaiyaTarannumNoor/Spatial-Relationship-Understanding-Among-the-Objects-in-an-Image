@@ -129,6 +129,14 @@ In a semantic world model, control frequency is the speed at which an AI makes d
 Task-agnostic means operating independently of specific tasks or objectives. It describes systems, algorithms, or methods that function generally without requiring prior knowledge of, or adjustments for, the specific job.
 It describes a model that can solve many different types of problems without changing it's core structure. It's about model flexibility.
 
+### Iheln_0_int 
+“Ihlen_0_int” is a house-scale interactive 3D simulation environment featured in Embodied AI benchmarks like BEHAVIOR-1K and iGibson.
+
+### Ihlen_1_int
+Ihlen_1_int is a simulated interactive home environment and scene heavily utilized in Embodied AI and robotics research to evaluate algorithms on everyday human tasks.
+
+### Rs_int
+RS( Realistic Scene). Rs_int refers to a highly interactive, simulated indoor environment (a fully interactive scene) used in Embodied AI and robotics simulators like iGibson and OmniGibson.In robotic research, it serves as a standardized test bench for reinforcement learning, motion planning, and human-robot interaction tasks.
 
 # JEPA (Joint embedding predictive architecture)
 In a JEPA prediction occurs in the abstract representation space.
