@@ -17,3 +17,7 @@ The H-Jepa architecture consists of 5 differentiable modules:
 3. Actor:  Responsible for generating action plans to accomplish current tasks. It functions at multiple levels of abstraction to convert high-level goals into concrete motor controls.
 4. Critic Module: Evaluates the predicted outcomes of planned actions, helping the agent find the optimal path under uncertainty.
 5. Configurator: A meta-controller or gating mechanism that dynamically adjusts the settings of all other modules based on the specific current task.
+
+
+###  Evaluation
+The author does not evaluate H-JEPA, a conceptual architecture, on any dataset. Instead, the framework proposes evaluating the model using energy minimization, specifically by measuring the latent space prediction error between predicted and actual future states.
