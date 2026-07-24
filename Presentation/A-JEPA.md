@@ -5,3 +5,16 @@ Through an extensive empirical evaluation, they demonstrate that:
 • This paper delves into a simple extension of JEPA to audio data, presenting a unified and scalable framework for learning self-supervised audio representations. 
 • To cover the unique challenges of the audio domain, they introduce a curriculum masking strategy for a gradually time-frequency aware pattern during pre-training, and regularized patch masking for robust information flow during fine-tuning.
 • Experimental results substantiate the scalability and efficiency of the A-JEPA framework. Moreover, AJEPA exhibits superior performance compared to pixel reconstruction techniques like AudioMAE in AS-2M classification and other downstream tasks. Finally, they made the code and the models publicly available.
+
+### Architecture
+The A-JEPA architecture consists of four main components:
+
+1. Context Encoder – encodes visible spectrogram patches.
+
+2. Target Encoder – generates target representations from the full spectrogram.
+
+3. Predictor Network – predicts the representations of masked regions.
+
+4. Curriculum Masking Mechanism – progressively masks time-frequency regions during training.
+
+During pretraining, A-JEPA learns by predicting latent representations of masked regions rather than reconstructing audio pixels.
