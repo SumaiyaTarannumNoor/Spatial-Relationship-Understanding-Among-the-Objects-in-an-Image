@@ -8,3 +8,9 @@ In this paper, Eloi et al. introduce **DIAMOND** (Diffusion As a Model of eNviro
 - An RL agent is trained entirely inside the generated environment produced by the world model.
 - The authors employ the EDM (Elucidated Diffusion Model) framework to improve generation quality and stability.
 - The generated trajectories are used to train policies without requiring additional interaction with the real environment.
+
+### Evaluation 
+Eloi et al. evaluated DIAMOND on the Atari 100k benchmark, a standard sample-efficient reinforcement learning benchmark where agents are limited to 100,000 interactions with the environment. They compared DIAMOND against several state-of-the-art world-model-based reinforcement learning approaches, including SimPLe, TWM, IRIS, DreamerV3, and STORM. The evaluation used Human Normalized Score (HNS) and Interquartile Mean (IQM) as the primary performance metrics.
+
+### Results
+Eloi et al. report that DIAMOND achieved a mean Human Normalized Score (HNS) of 1.46 and an Interquartile Mean (IQM) of 0.64 on the Atari 100k benchmark. The model outperformed human players on 11 Atari games and achieved a new state-of-the-art result among agents trained entirely within a world model. The authors also observed particularly strong performance on visually demanding games such as Asterix, Breakout, and Road Runner, demonstrating the importance of preserving visual details during world modeling.
