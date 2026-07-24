@@ -28,3 +28,6 @@ The authors evaluated A-JEPA on AudioSet-2M (AS-2M) and several downstream audio
 - Sound event recognition
 
 They compared A-JEPA against self-supervised audio representation learning methods, particularly AudioMAE, to evaluate scalability and representation quality.
+
+### Results
+The authors report that A-JEPA consistently outperformed reconstruction-based methods such as AudioMAE on AudioSet-2M classification and multiple downstream audio tasks. The results demonstrate that predictive representation learning is more effective than pixel-level reconstruction for learning audio representations. The experiments also show that A-JEPA scales effectively with larger models and datasets while maintaining strong transfer performance across diverse audio benchmarks
