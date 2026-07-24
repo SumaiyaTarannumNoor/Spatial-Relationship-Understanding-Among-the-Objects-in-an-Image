@@ -8,9 +8,23 @@ A teacher-student predictive learning strategy that improves robustness to occlu
 OccuSolver, a module for fine-grained object-aware visibility estimation and occlusion pattern modeling.
 Strong improvements in tracking robustness and generalization across multiple tracking benchmarks.
 
-### Architecture
-1. Historical frames and previous tracking results are used as few-shot examples to provide context about the target object.
-2. A Teacher Predictor (t-Predictor) receives a clean current frame and generates pseudo-tracking models.
-3. A Student Predictor (s-Predictor) receives a corrupted version of the same frame and learns to predict the teacher's pseudo-tracking models.
-4. Both teacher and student predictors share the same historical information, allowing the student to learn robust model adaptation under challenging conditions.
-5. The framework extends JEPA from image-feature prediction to tracking-model prediction.
+Architecture
+The GOT-JEPA architecture is divided into two main components:
+
+GOT-JEPA Framework:
+1. Historical frames and previous tracking results provide contextual information about the target.
+2. A Teacher Predictor processes clean frames and generates pseudo tracking models.
+3. A Student Predictor receives corrupted frames and learns to predict the teacher's tracking models.
+4. The teacher-student JEPA objective improves robustness to appearance changes, distractors, and noisy observations.
+
+OccuSolver:
+5. OccuSolver performs fine-grained visibility estimation using point-based object tracking.
+6. It models occlusion patterns and refines object visibility information.
+7. The refined visibility cues are used to improve tracking performance under partial and full occlusions.
+
+
+### Evaluation 
+Shih-Fang et al. evaluated GOT-JEPA on seven generic object tracking benchmarks to measure tracking accuracy, robustness, generalization to unseen targets, and performance under adverse visibility conditions. The evaluation included challenging scenarios involving occlusions, distractors, deformation, and background clutter.
+
+### Results
+Shih-Fang et al. report that GOT-JEPA achieved a 63.7% success rate on AVisT, surpassing PiVOT (62.2%), and an average overlap of 79.6% on GOT-10k. The results demonstrate strong tracking accuracy, generalization, and robustness to occlusions.
