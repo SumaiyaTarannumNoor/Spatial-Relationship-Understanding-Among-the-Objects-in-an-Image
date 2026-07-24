@@ -1,6 +1,6 @@
 ## Diffusion World Model: Future Modeling Beyond Step-by-Step Rollout for Offline Reinforcement Learning
 
-In this paper, Zihan et al. introduce Diffusion World Model (DWM), a conditional diffusion model capable of predicting multistep future states and reward concurrently.l
+In this paper, Zihan et al. introduce Diffusion World Model (DWM), a conditional diffusion model capable of predicting multistep future states and rewards concurrently. 
 
 
 
