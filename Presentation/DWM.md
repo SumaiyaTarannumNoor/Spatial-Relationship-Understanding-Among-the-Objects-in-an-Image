@@ -17,3 +17,8 @@ The authors first train a diffusion world model on offline data, then use its ge
 5. These embeddings are combined and used to condition the diffusion model during trajectory generation.
 
 6. Through a guided diffusion process, the model generates future state and reward sequences that are used for planning and policy learning.
+
+### Results
+Zihan et al.'s results confirm that DWM outperform one-step models, where DWM-based algorithms achieve a 44% performance gain. 
+They further consider a variant of their approach where the diffusion model is substituted with a Transformer architecture. They confirm that DWM-based algorithms surpass
+Transformer-based algorithms with a 37.5% performance gain.
