@@ -13,3 +13,6 @@ V-JEPA 2.1 combined 4 key ingredients:
 4. The predictor processes the combined tokens and generates predictions for the masked regions.
 5. Training uses two different losses: (i) an L1 loss on masked-token predictions (the original V-JEPA objective),
 and (ii) a distance-weighted L1 loss on nearby context tokens, both supervised using the y-encoder multi-level outputs.
+
+### Evaluation 
+V-JEPA 2.1 achieved state-of-the-art results across multiple benchmarks: 7.71 mAP on Ego4D for short-term object-interaction anticipation, 40.8 Recall@5 on EPIC-KITCHENS for high-level action anticipation, and a 20% improvement in real-robot grasping success rate over V-JEPA-2 AC. It also achieved 5.687 ATE on Tartan Drive for robotic navigation, 0.307 RMSE on NYUv2 for depth estimation using a linear probe, and 77.7% accuracy on Something-Something-V2 for global recognition. These results demonstrate strong performance in visual understanding and world modeling.
