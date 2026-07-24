@@ -1,1 +1,2 @@
 ## VALUE-GUIDED ACTION PLANNING WITH JEPA WORLD MODELS
+In this paper, Matthieu et al. proposed improving planning in JEPA-based world models by shaping the representation space so that the distance between state embeddings reflects the goal-conditioned value function. They introduce a training method that enforces this property and demonstrate that it significantly improves planning performance compared to standard JEPA models on simple control tasks.
