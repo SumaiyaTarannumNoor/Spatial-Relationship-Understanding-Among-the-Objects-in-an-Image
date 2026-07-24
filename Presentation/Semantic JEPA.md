@@ -13,3 +13,9 @@ The architecture consists of four main components:
 2. Hidden-State Trajectory Modeling – treats successive hidden states as points on a semantic manifold.
 3. Semantic Tube Prediction (STP) Module – constrains hidden-state trajectories to remain close to a locally linear geodesic path.
 4. Joint Training Objective – combines standard next-token prediction with the STP regularization loss.
+
+### Evaluation
+Hai et al. evaluated Semantic Tube Prediction (STP) on the NL-RX-SYNTH benchmark and additional reasoning and language understanding tasks across multiple model families and model sizes. The experiments focused on measuring data efficiency and comparing STP against standard next-token prediction training and LLM-JEPA.
+
+### Results
+Hai et al. report that STP consistently outperformed standard fine-tuning and LLM-JEPA across datasets, model families, and model sizes. Most notably, STP matched baseline accuracy on NL-RX-SYNTH using 16× less training data, demonstrating substantially improved data efficiency and challenging conventional scaling-law assumptions.
