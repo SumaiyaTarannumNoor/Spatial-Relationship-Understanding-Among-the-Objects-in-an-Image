@@ -1,1 +1,2 @@
 ## V-JEPA 2.1: Unlocking Dense Features in Video Self-Supervised Learning
+In this paper, Lorenzo et al. present  V-JEPA 2.1, a family of self-supervised models that learn dense, high-quality representations for visual scenes in both images and videos, while having strong global scene understanding. They study self-supervised learning with a latent musk-denoising vobjective, where the model predicts masked segments of an image or video directly in a learned representation space. 
