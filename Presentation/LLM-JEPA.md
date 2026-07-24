@@ -22,5 +22,6 @@ Therefore, the architecture includes:
 
 6. The model learns both generative capabilities and abstract semantic representations through the joint training objective.
 
-### Evaluation 
+### Results
+Hai et al. report that LLM-JEPA consistently outperformed standard LLM training objectives across all evaluated models and datasets. The method showed improvements in reasoning, code generation, and language understanding tasks while remaining more robust to overfitting. Specifically, on the NL-RX-SYNTH benchmark, Llama-3.2-1B-Instruct improved from 57.29% accuracy with standard fine-tuning to 71.46% accuracy with LLM-JEPA. Similar gains were observed across Gemma 2, OpenELM, and OLMo models.
 
