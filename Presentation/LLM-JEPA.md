@@ -4,7 +4,7 @@ In this paper, Hai et al. propose a first step in the direction of developing LL
 Their main contributions are:
 - **Novel JEPA-based training objective**: They present the first JEPA-based training objective for LLMs operating in embedding space and with different views, perfectly following vision-based JEPAs without sacrificing the generative capabilities of LLMs.
 - **Improved SOTA**: They empirically validate their formulation in various fine-tuning settings, where they obtain improvements over standard LLM fine-tuning solutions. They also explore pretraining scenarios, showing encouraging results of LLM-JEPA
-- **Extensive empirical validation**: On various model family (llama, gemma, apple/openelm, allenai/olmo), datasets (NL-RX, GSM8K, Spider, RottenTomatoes), and size
+- **Extensive empirical validation**: On various model family (llama, gemma, apple/openelm, allenai/olmo), datasets (NL-RX for converting Natural Language to Regular Expressions, GSM8K for Mathematical Reasoning, Spider for Text-to-SQL Generation, RottenTomatoes for Sentiment Classification), and size
 
 ### Architecture
 The construction of our LLM-JEPA objective relies on two principles. First, the generative capabilities of LLMs must be preserved, and Second, it should be aimed
@@ -21,3 +21,6 @@ Therefore, the architecture includes:
 5. Training combines the conventional next-token prediction objective with a JEPA embedding prediction objective.
 
 6. The model learns both generative capabilities and abstract semantic representations through the joint training objective.
+
+### Evaluation 
+
