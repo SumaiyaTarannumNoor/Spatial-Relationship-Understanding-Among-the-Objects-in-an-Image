@@ -18,3 +18,13 @@ The A-JEPA architecture consists of four main components:
 4. Curriculum Masking Mechanism – progressively masks time-frequency regions during training.
 
 During pretraining, A-JEPA learns by predicting latent representations of masked regions rather than reconstructing audio pixels.
+
+
+### Evaluation
+The authors evaluated A-JEPA on AudioSet-2M (AS-2M) and several downstream audio tasks, including:
+
+- Audio classification
+- Audio tagging
+- Sound event recognition
+
+They compared A-JEPA against self-supervised audio representation learning methods, particularly AudioMAE, to evaluate scalability and representation quality.
