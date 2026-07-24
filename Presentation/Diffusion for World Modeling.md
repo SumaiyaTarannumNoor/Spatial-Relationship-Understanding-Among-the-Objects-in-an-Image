@@ -1,1 +1,1 @@
-
+## Diffusion for World Modeling: Visual Details Matter in Atari
