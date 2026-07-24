@@ -1,7 +1,8 @@
 ## Diffusion World Model: Future Modeling Beyond Step-by-Step Rollout for Offline Reinforcement Learning
 
 In this paper, Zihan et al. introduce Diffusion World Model (DWM), a conditional diffusion model capable of predicting multistep future states and rewards concurrently. 
-
+To evaluate the proposed DWM, the authors use an offline reinforcement learning setting, where policies are learned from a fixed dataset without online interaction. This removes exploration-related effects and enables a clearer assessment of world model quality. 
+The authors first train a diffusion world model on offline data, then use its generated trajectories to train an actor-critic policy. They also introduce Diffusion-MVE, which estimates target values by simulating future trajectories up to a chosen horizon.
 
 
 ### Architecture
