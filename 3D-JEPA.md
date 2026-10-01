@@ -1,2 +1,2 @@
-
-https://github.com/facebookresearch/locate-3d
+- https://github.com/facebookresearch/locate-3d
+- https://huggingface.co/buckets/SumaiyaTN/3d-jepa-bucket
